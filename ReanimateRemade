@@ -89,7 +89,7 @@ if W == true or S == true or D == true or A == true then
             Running:AdjustSpeed(1)
         elseif game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 7 then
             Running:AdjustSpeed(0.5)
-        elseif game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 5 then
+        elseif game.Players.LocalPlayer.Character.Humanoid.WalkSpeed < 6 and game.Players.LocalPlayer.Character.Humanoid.WalkSpeed ~= 0 then
             Running:AdjustSpeed(0.4)
         elseif game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 0 then
             Running:Stop()
